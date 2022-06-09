@@ -1,0 +1,69 @@
+{
+  "name": "blog-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./lib/index.js",
+  "scripts": {
+    "start": "\"npm run build\" && node --es-module-specifier-resolution=node ./lib/index.js",
+    "dev": "nodemon",
+    "build": "npx webpack --config webpack.config.js",
+    "lint": "tslint -c tslint.json src/**/*.ts",
+    "prepublish": "npm run build"
+  },
+  "keywords": [
+    "postgresql",
+    "typescript",
+    "node",
+    "jwt"
+  ],
+  "author": {
+    "name": "Bohdan Lukianchenko"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "config": "^3.3.7",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "express-validator": "^6.14.0",
+    "jsonwebtoken": "^8.5.1",
+    "multer": "^1.4.4",
+    "nodemailer": "^6.7.2",
+    "pg": "^8.7.3",
+    "pg-hstore": "^2.3.4",
+    "resize-img": "^2.0.0",
+    "sequelize": "^6.19.0",
+    "socket.io": "^4.5.1",
+    "tslint": "^6.1.3",
+    "typescript": "^4.5.5",
+    "uuid": "^8.3.2",
+    "ws": "^8.6.0"
+  },
+  "files": [
+    "./bin/*",
+    "./lib/*"
+  ],
+  "typings": "./lib/index.d.ts",
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/config": "^0.0.41",
+    "@types/cookie-parser": "^1.4.2",
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/express-validator": "^3.0.0",
+    "@types/jsonwebtoken": "^8.5.8",
+    "@types/multer": "^1.4.7",
+    "@types/nodemailer": "^6.4.4",
+    "@types/resize-img": "^2.0.1",
+    "@types/uuid": "^8.3.4",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^10.2.4",
+    "html-loader": "^3.1.0",
+    "nodemon": "^2.0.15",
+    "ts-loader": "^9.2.9",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-node-externals": "^3.0.0"
+  }
+}

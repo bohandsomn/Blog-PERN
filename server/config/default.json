@@ -1,0 +1,47 @@
+{
+    "PROTOCOL": "http",
+    "DOMAIN_NAME": "localhost",
+    "PORT": 5000,
+    "pool-config": {
+        "user": "user",
+        "password": "password",
+        "host": "host",
+        "port": 1234,
+        "database": "database"
+    },
+    "JWT_ACCESS_SECRET_KEY": "JWT_ACCESS_SECRET_KEY",
+    "JWT_REFRESH_SECRET_KEY": "JWT_REFRESH_SECRET_KEY",
+    "CLIENT_URL": "http://localhost:3000",
+    "API_URL": "http://localhost:5000",
+    "transport-options": {
+        "host": "host",
+        "port": 123,
+        "secure": false,
+        "auth": {
+            "user": "user",
+            "pass": "pass"
+        },
+        "tls": {
+            "rejectUnauthorized": false
+        }
+    },
+    "encoding": "base64",
+    "resize-options": {
+        "original": { 
+            "width": 200, 
+            "height": 200 
+        },
+        "post": { 
+            "width": 75, 
+            "height": 75 
+        },
+        "preview": { 
+            "width": 60, 
+            "height": 60 
+        },
+        "message": { 
+            "width": 25, 
+            "height": 25 
+        }
+    }
+}
